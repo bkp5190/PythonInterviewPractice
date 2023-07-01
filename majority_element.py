@@ -6,11 +6,9 @@ from typing import List
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         # Intuitive with dictionary
-        def intuitiveApproach(nums: List[int]) -> int:
+        def intuitive_approach(nums: List[int]) -> int:
             d = {}
-            appearances = len(nums) / 2
-
-
+            
             for i in nums:
                 if i in d:
                     d[i] += 1
@@ -20,7 +18,7 @@ class Solution:
             return max(d, key=d.get)
 
             # Moore's Voting Algorithm O(n) time, O(1) space
-        def mooresVotingAlgo(nums: List[int]) -> int:
+        def moores_voting_algorithm(nums: List[int]) -> int:
             counter = 0
             candidate = 0
 
@@ -35,7 +33,7 @@ class Solution:
 
             return candidate
         # return intuitiveApproach(nums)
-        return mooresVotingAlgo(nums)
+        return moores_voting_algorithm(nums)
 
 solution = Solution()
 print(solution.majorityElement([1, 2, 2, 2, 3]))
