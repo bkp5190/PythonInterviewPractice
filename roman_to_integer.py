@@ -26,7 +26,7 @@ class Solution:
     
 test_numeral_1 = 'III'
 test_numeral_2 = 'LVIII'
-test_numeral_3 = 'MCMXCIV'
+test_numeral_3 = 'MMXCIV'
 
 solution = Solution()
 
