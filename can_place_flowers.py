@@ -3,6 +3,7 @@
 
 from typing import List
 
+
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         counter = 0
@@ -18,7 +19,8 @@ class Solution:
                     counter = 0
 
         return plantable == n
-    
+
+
 solution = Solution()
 print(solution.canPlaceFlowers([1, 0, 0, 0, 1], 1))
 print(solution.canPlaceFlowers([1, 0, 1, 0, 1, 0, 0, 0], 2))

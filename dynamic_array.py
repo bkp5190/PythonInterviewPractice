@@ -15,10 +15,12 @@ import sys
 #  2. 2D_INTEGER_ARRAY queries
 #
 
+
 def dynamicArray(n, queries):
     # Write your code here
     arr = [n][n]
     return arr
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
