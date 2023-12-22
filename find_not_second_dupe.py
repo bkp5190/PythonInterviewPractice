@@ -6,7 +6,8 @@ class Solution:
         for i in nums:
             xor ^= i
         return xor
-    
+
+
 # When you XOR an int ^ int = 0
 # When you XOR an int ^ 0 = int
 # O(n) Time, O(1) Space
